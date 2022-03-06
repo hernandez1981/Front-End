@@ -1,0 +1,35 @@
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .list-unstyled {
+      color: #FFF;
+    }
+
+    .titulo {
+      text-align: center;
+    }
+
+    .container img {
+      width: 100px;     
+    }
+    .container h3 {
+      font-size: calc(0.8rem + .6vw);
+    }
+
+    .carousel-item img {
+      display: block;
+      margin: auto;      
+      max-height: 350px;
+      overflow: hidden;
+    }
