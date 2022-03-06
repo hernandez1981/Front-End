@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practicas Launch-x">
+  <meta name="author" content="Catalina Hernández Altunar">
+  <meta name="generator" content="owner">
+  <title>Pastelería Mil Amores</title>  
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/styles.css">  
+ 
+  <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#7952b3">
+</head>
+<body>
+  <header>   
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">Acerca de:</h4>
+            <p class="text-white">Todos nuestros productos están hechos con amor, con sabores únicos e irresistibles.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <ul>
+              <a class="navbar-brand text-white" href="Index.html">Inicio</a>
+              <a class="navbar-brand text-white" href="#">Pedido</a>
+              <a class="navbar-brand text-white" href="#">Entregados</a>
+              <a class="navbar-brand text-white" href="Admin-Pastelero.html" target="blank">Pastelero</a>
+            </ul>
+            <h4 class="text-white">Contacto</h4>
+            <ul class="list-unstyled">
+              <li>Dirección: Belizario Domínguez #320, Los Mochis, Sinaloa. </li>
+              <li>Llamar al teléfono <a href="tel:6681596965" class="text-white">6681596965</a></li>
+              <li>Horario de atención: Estamos de 8am a 8pm todos los días.</li>
+              <br>
+              <li>Para realizar su pedido váyase al final de la página.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="Index.html" class="navbar-brand d-flex align-items-center">          
+          <img src="assets/imgs/slider0.jpg" alt="Logo">         
+          <h1>Pastelería Mil Amores</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>      
+  </header>
+
+  <main>
+    <form action="/pedidos.html" method="post">
+      <section class="text-center container">
+        <h1>Bienvenido, encuentre los mejores pasteles de su preferencia.</h1>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/imgs/slider0.jpg" class="d-block w-50" alt="Logo">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/imgs/slider1.jpg" class="d-block w-50" alt="Slider 1">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/imgs/slider2.jpg" class="d-block w-50" alt="Slider 2">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/imgs/slider3.jpg" class="d-block w-50" alt="Slider 3">
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <div class="album py-5 bg-light">
+        <div class="container">  
+          <h2 class="titulo">Pasteles</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">          
+            <div class="col text-center">           
+              <label class="card shadow-sm center pt-2 py-2">
+                <div class="card-body">
+                  <h3>Individual $80.00</h3>
+                  <img src="assets/imgs/p-individual.jpeg">
+                  <p> Seleccionar
+                    <input type="radio" name="tamano" value="individual">
+                  </p>
+                </div>
+              </label>           
+            </div>
+
+            <div class="col text-center">           
+              <label class="card shadow-sm center pt-2 py-2">
+                <div class="card-body">
+                  <h3>Chico $180.00</h3>
+                  <img src="assets/imgs/p-chico.jpeg">
+                  <p>Seleccionar
+                    <input type="radio" name="tamano" value="chico">
+                  </p>
+                </div>
+              </label>
+            </div>
+
+            <div class="col text-center">            
+              <label class="card shadow-sm center pt-2 py-2">
+                <div class="card-body">
+                  <h3>Mediano $280.00</h3>
+                  <img src="assets/imgs/p-mediano.jpeg">
+                  <p>Seleccionar
+                    <input type="radio" name="tamano" value="mediano">
+                  </p>
+                </div>
+              </label>
+            </div>
+
+            <div class="col text-center">           
+              <label class="card shadow-sm center pt-2 py-2">
+                <div class="card-body">
+                  <h3>Grande $350.00</h3>
+                  <img src="assets/imgs/p-grande.jpeg">
+                  <p>Seleccionar
+                    <input type="radio" name="tamano" value="grande">
+                  </p>
+                </div>
+              </label>
+            </div>            
+          </div>
+        </div>
+
+        <div class="container">  
+          <h2 class="titulo">Sabores</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">          
+            <div class="col text-center">            
+              <label class="card shadow-sm center pt-2 py-2">
+                <div class="card-body">
+                  <h3>Chocolate $80.00</h3>
+                  <img src="assets/imgs/p-chocolate-fresa.jpeg">
+                  <p>Seleccionar
+                    <input type="radio" name="sabores" value="chocolate">
+                  </p>
+                </div>
+              </label>
+            </div>
+
+            <div class="col text-center">            
+              <label class="card shadow-sm center pt-2 py-2">
+                <div class="card-body">
+                  <h3>Fresa $120.00</h3>
+                  <img src="assets/imgs/p-fresa.jpeg">
+                  <p>Seleccionar
+                    <input type="radio" name="sabores" value="fresa">
+                  </p>
+                </div>
+              </label>
+            </div>
+
+            <div class="col text-center">            
+              <label class="card shadow-sm center pt-2 py-2">
+                <div class="card-body">
+                  <h3>Tres leches $100.00</h3>
+                  <img src="assets/imgs/p-3Leches.jpeg">
+                  <p>Seleccionar
+                    <input type="radio" name="sabores" value="3leches">
+                  </p>
+                </div>
+              </label>
+            </div>
+
+            <div class="col text-center">           
+              <label class="card shadow-sm center pt-2 py-2">
+                <div class="card-body">
+                  <h3>Vainilla $150.00</h3>
+                  <img src="assets/imgs/p-vainilla.jpeg">
+                  <p>Seleccionar
+                    <input type="radio" name="sabores" value="vainilla">
+                  </p>
+                </div>
+              </label>
+            </div>            
+          </div>
+        </div>
+
+        <div class="container">  
+          <h2 class="titulo">Adornos</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">          
+            <div class="col text-center">            
+              <label class="card shadow-sm center pt-2 py-2">
+                <div class="card-body">
+                  <h3>Fresas Naturales $80.00</h3>
+                  <img src="assets/imgs/d-Fresas.jpeg">
+                  <p>Seleccionar
+                    <input type="radio" name="adornos" value="fresa">
+                  </p>
+                </div>
+              </label>
+            </div>
+
+            <div class="col text-center">            
+              <label class="card shadow-sm center pt-2 py-2">
+                <div class="card-body">
+                  <h3>Galletas Chispas de chocolate $50.00</h3>
+                  <img src="assets/imgs/d-galletasChispas.jpeg">
+                  <p>Seleccionar
+                    <input type="radio" name="adornos" value="galletasChispas">
+                  </p>
+                </div>
+              </label>
+            </div>
+
+            <div class="col text-center">            
+              <label class="card shadow-sm center pt-2 py-2">
+                <div class="card-body">
+                  <h3>Almendras $100.00</h3>
+                  <img src="assets/imgs/d-almendras.jpeg">
+                  <p>Seleccionar
+                    <input type="radio" name="adornos" value="almendras">
+                  </p>
+                </div>
+              </label>
+            </div>
+
+            <div class="col text-center">            
+              <label class="card shadow-sm center pt-2 py-2">
+                <div class="card-body">
+                  <h3>Frutos Secos $150.00</h3>
+                  <img src="assets/imgs/d-frutosSecos.jpeg">
+                  <p>Seleccionar
+                    <input type="radio" name="adornos" value="frutos">
+                  </p>
+                </div>
+              </label>
+            </div>            
+          </div>
+        </div>        
+
+        <h2 class="display-6 text-center mb-4">Registra tus datos para tu pedido</h2>
+          <div class="row ms-1 me-1">
+            <div class="col-md-2">              
+            </div>
+            <div class="col-md-8">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+              </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Teléfono">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tucorreo@mail.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3">
+                  <label for="pastel">Seleccione Sabor</label>
+                  <select id="pastel" name="pastel">
+                    <option value="chocolate">Chocolate</option>
+                    <option value="fresa">Fresa</option>
+                    <option value="limon">Limón</option>
+                    <option value="mermelada">Mermelada</option>
+                    <option value="3leches">3 Leches</option>
+                    <option value="cafe">Café</option>
+                    <option value="vainilla">Vainilla</option>
+                  </select>   
+                </div>
+      
+                <div class="mb-3">
+                  <label for="pastel">Selecione Decoración</label>
+                  <select id="pastel" name="pastel">
+                    <option value="galletasChispas">Galletas chispas de chocolate</option>
+                    <option value="florales">Florales</option>
+                    <option value="fresas">Fresas Naturales</option>                    
+                    <option value="almendra">Almendra</option>
+                    <option value="frutos">Frutos Secos</option>            
+                  </select>
+                </div>
+      
+                <div class="mb-3">
+                  <label for="pastel">Seleccione Tamaño</label>
+                  <select id="pastel" name="pastel">
+                    <option value="chico">Chico</option>
+                    <option value="mediano">Mediano</option>
+                    <option value="grande">Grande</option>                       
+                  </select>
+                </div>
+
+                <div class="mb-3">                    
+                  <button type="submit" class="btn btn-outline-success" onclick="alert('Gracias por preferirnos, enseguida lo atenderemos.')">Enviar Pedido</button>                  
+                  <button type="reset" class="btn btn-outline-danger">Limpiar</button>
+                </div>
+            </div>   
+          </div>         
+    </form>
+  </main>
+
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Subir</a>        
+      </p>
+      <p class="mb-1 text-center">&copy; 2022. Derechos Reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

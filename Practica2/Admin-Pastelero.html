@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practicas Launch-x">
+  <meta name="author" content="Catalina Hernández Altunar">
+  <meta name="generator" content="owner">
+  <title>Pastelería Mil Amores</title> 
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#7952b3">
+</head>
+<body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">Acerca de:</h4>
+                        <p class="text-white">Todos nuestros productos están hechos con amor, con sabores únicos e irresistibles.</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <ul>
+                            <a class="navbar-brand text-white" href="Index.html">Inicio</a>
+                            <a class="navbar-brand text-white" href="#">Pedido</a>
+                            <a class="navbar-brand text-white" href="#">Entregados</a>
+                            <a class="navbar-brand text-white" href="Admin-Pastelero.html">Pastelero</a>
+                          </ul>
+                        <h4 class="text-white">Contacto</h4>
+                        <ul class="list-unstyled">
+                            <li>Dirección: Belizario Domínguez #320, Los Mochis, Sinaloa. </li>
+                            <li>Llamar al teléfono <a href="tel:6681596965" class="text-white">6681596965</a></li>
+                            <li>Horario de atención: Estamos de 8am a 8pm todos los días.</li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="Index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="assets/imgs/slider0.jpg" alt="Logo">
+                    <h1>Pastelería Mil Amores</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>    
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="mt-5 text-center">Sabores en existencia</h1>
+            <table class="table table-info table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Quedan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Chocolate</td>
+                        <td>10 kg</td>
+                        <td>5 kg</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Fresas</td>
+                        <td>20 cajas</td>
+                        <td>5 cajas</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Leche</td>
+                        <td>20 litros</td>
+                        <td>10 lts</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Vainilla</td>
+                        <td>15 lts</td>
+                        <td>8 lts</td>
+                    </tr>
+                </tbody>          
+            </table>
+
+            <h1 class="mt-5 text-center">Decoraciones en existencia</h1>
+            <table class="table table-info table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Quedan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Fresas Naturales</td>
+                        <td>35 cajas</td>
+                        <td>12 cajas</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Betún</td>
+                        <td>30 kg</td>
+                        <td>20 kg</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Galletas Chispas</td>
+                        <td>20 cajas</td>
+                        <td>15 cajas</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Frutos secos</td>
+                        <td>20 kg</td>
+                        <td>15 kg</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Almendras</td>
+                        <td>15 kg</td>
+                        <td>10 kg</td>
+                    </tr>
+                </tbody>          
+            </table>
+
+            <h1 class="mt-5 text-center">Pedidos realizados</h1>
+            <table class="table table info">
+                <thead>
+                    <tr>                    
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Teléfono</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Jose López</th>
+                        <td>6681234567</td>
+                        <td>jlopez@hotmail.com</td>
+                    </tr>                  
+                    <tr class="table-primary">
+                        <th scope="row">Isaac Sanchez</th>
+                        <td>6687894562</td>
+                        <td>sanchezisaac@gmail.com</td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <th scope="row">Cruz López</th>
+                        <td>6680125689</td>
+                        <td>clopez@hotmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Oscar Hernández</th>
+                        <td>6911538888</td>
+                        <td>hernandez@hotmail.com</td>
+                    </tr>                  
+                    <tr class="table-primary">
+                        <th scope="row">Elena Gónzalez</th>
+                        <td>6681234567</td>
+                        <td>egonz@gmail.com</td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <th scope="row">Juan García</th>
+                        <td>6689876540</td>
+                        <td>garciajuan@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Subir</a>
+            </p>
+            <p class="mb-1 text-center">&copy; 2022. Derechos Reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
