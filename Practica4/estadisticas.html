@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- referencia chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    
+</head>
+<body class="text-center img-body">   
+    <main class="form-signin">
+        <header class="poke-card">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="Index.html">
+                        <img src="assets/imgs/logo.png" alt="Pokemon" id="logo" width="50px"> <br>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="Index.html">Inicio</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="movimientos.html">Movimientos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="estadisticas.html">Estadísticas</a>
+                            </li>                           
+                        </ul>                    
+                    </div>
+                </div>
+            </nav>
+        </header>
+            
+        <form class="poke-card"> 
+            <h1 >Pokedex LaunchX</h1>            
+            <div class="row " >
+                <div class="col-12 col-md-8">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre o ID</label>
+                        <input type="text" class="form-control" placeholder="Nombre Pokemón o Número ID" id="pokeName" name="pokeName">
+                    </div>    
+                </div> 
+                <div class="col-12 col-md-4">
+                    <div>
+                        <br>
+                        <button type="button" onclick="fetchBuscar()" class="btn btn-primary">Buscar</button>
+                    </div>                   
+                </div>
+            </div>
+
+            <div class=" row">
+                <div class="row">                
+                    <div class="col-12 col-md-12">
+                        <img class="color poke-img" src="assets/imgs/default.png" alt="Pokemon" id="pokeImg"> 
+                    </div>
+                </div>
+    
+                <div data-poke-id class="fs">                    
+                </div> 
+    
+                <div class="grafica" id="graficaR" style="display: none;" >
+                    <canvas id="grafica"></canvas>
+                </div>  
+            </div>
+
+             <p class="mt-5 mb-3 text-muted">&copy; 2022.Katy Hernández.</p>
+        </form>  
+    </main>
+    <footer>       
+        <script src="assets/js/estadistica.js"></script>
+    </footer>
+</body>
+</html>
